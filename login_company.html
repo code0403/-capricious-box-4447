@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <script src="https://kit.fontawesome.com/ba9f74f15d.js" crossorigin="anonymous"></script>
+    <style>
+        #login-conatiner{
+            width:35%;
+            height: 650px;
+            border:0px solid black;
+            margin: auto;
+            margin-top: 50px;
+           border-radius: 10px;
+           box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+        #heading{
+            width:85%;
+            height:60px;
+            border:0px solid green;
+            padding-top: 20px;
+            margin-left: 35px;
+            display: flex;
+        }
+        #heading >div{
+            border: 0px solid red;
+            width:50%;
+            height: 100%;
+            font-size: 20px;
+            margin-top: 20px;
+            margin: auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        #heading >div>a{
+            text-decoration: none;
+            color: black;
+        }
+        h2{
+            margin-left: 35px;
+            margin-top: 5px;
+        }
+        #message{
+            width:85%;
+            height:60px;
+            border:1px dotted green;
+            border-radius: 5px;
+            margin-left: 35px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(240, 233, 233);
+        }
+        #message>p{
+            margin-top: 0px;
+            line-height: 25px;
+            margin-left: 5px;
+            font-family: sans-serif;
+        }
+        #message>p>a{
+            text-decoration: none;
+        }
+        #linkedin{
+            width:85%;
+            height:45px;
+            border:0px solid green;
+            border-radius: 5px;
+            margin-left: 35px;
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            column-gap: 50px;
+            background-color: #087cdd;
+            color: white;
+            font-family: 'Times New Roman', Times, serif;
+            margin-bottom: 3px;
+         
+
+        }
+        #linkedin >div{
+            width: 35px;
+            height: 70%;
+            border:0px solid blue;
+            /* margin-right: 80px; */
+            margin-left: -65px;
+            background-color: white;
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #linkedin >h3{
+            text-align: center;
+        }
+        #linkedin >div>img{
+            width:70%;
+        }
+        h4{
+          text-align: center;
+          color:rgb(177, 159, 159);
+        }
+        #details{
+            width:85%;
+            height:150px;
+            border:0px solid green;
+            margin-left: 35px;
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            row-gap: 20px;
+        }
+        #details >input{
+            height: 50px;
+            border: none;
+            border-bottom: 2px solid gray;
+            font-size: 15px;
+        }
+        #help{
+            width:85%;
+            height:40px;
+            border:0px solid green;
+            margin-left: 35px;
+            /* margin-top: 5px; */
+            display: flex;
+            justify-content: space-between;
+        }
+        #help > div{
+            width:40%;
+            height:40px;
+            border:0px solid rgb(51, 105, 51);
+            display: flex;
+            justify-content: center; 
+            align-items: center;
+            font-size: 15px;
+        }
+        #help + p{
+            text-align: center;
+            color: gray;
+        }
+        button{
+            border: 1px solid red;
+            margin: auto;
+            width:85%;
+            height:40px;
+            margin-left: 35px;
+            background-color: white;
+        }
+        button:hover{
+            background-color: rgb(230, 214, 214);
+        }
+        
+        
+    </style>
+</head>
+<body>
+   <div id="login-conatiner">
+    <div id="heading">
+        <div><a href="login_student.html">Student</a></div>
+        <div>Company</div>
+     </div>
+     <h2>Login</h2>
+     <div id="message">
+        <p>If you are a student looking for internships, please login as a student by clicking <a href="login_student.html">here .</a></p>
+     </div>
+     <div id="linkedin">
+        <div><img src= "https://bit.ly/3fud40Q"</i></div>
+        <h3>SIGNIN WITH LINKEDIN</h3>
+     </div>
+     <h4>OR</h4>
+     <div id="details">
+        <input type ="text" placeholder="Email/Number">
+        <input type ="password" placeholder="Password"/> 
+     </div>
+     <div id="help">
+        <div>
+            <input type = "checkbox" />
+            <label> <span>Remember Me</span></label>
+        </div>
+        <div><a href="#"><p>Forgot Password ?</p></a></div>
+     </div>
+     <p>Don't have an account? <a href="#">Create Your Account</a></p>
+     <button>Login</button>
+   </div> 
+</body>
+</html>

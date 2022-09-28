@@ -1,0 +1,350 @@
+body{
+    margin:0;
+}
+
+#navbar{
+    border: 1px solid black;
+    width:100%;
+    height:90px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    overflow:auto;
+    position:relative;
+    /* position:absolute; */
+}
+#navbar > div{
+    border:0px solid black;
+    width:95%;
+    height:100%;
+    margin:auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#navcontainer{
+    border:0px solid rgb(110, 76, 76);
+    width:97%;
+    height:80%; 
+    display: flex;
+    justify-content: space-between;
+}
+#navcontainer > div{
+    border: 0px solid red;
+    width:200px;
+    height: 100%;
+    display: flex;
+}
+#navleft > div,#navright > div{
+    border: 0px solid rgb(48, 43, 43);
+    width:100px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#navleft > div >img{
+    width:100%;
+}
+#carticon >div{
+    border: 0px solid blueviolet;
+    width:60px;
+    height: 60px;
+     display: flex;
+    justify-content: center; 
+    align-items: center;
+    border-radius:65px; 
+}
+#carticon >div:hover{
+    background-color: rgb(201, 196, 196);
+}
+#carticon >div >img{
+    width:50%;
+   
+}
+
+#navright >div>a>button{
+  width:80px;
+  height: 40px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 17px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+#navright >div>a>button:hover{
+    background-color: brown;
+}
+ #menuicon > div{
+    border:0px solid gray;
+    width: 60px;
+    height:60px;
+    border-radius:55px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+} 
+#menuicon > div>img{
+  width:50%;
+}
+#menuicon > div:hover{
+    background-color: rgb(201, 196, 196);
+}
+.sidenav{
+    height: 100%;
+    width:0; 
+    position: fixed; 
+    z-index: 1;
+    top: 0; 
+    left: 0;
+    background-color:white;
+    overflow-x: hidden; 
+    padding-top: 60px;
+    transition: 0.5s; 
+    display: flex;
+    flex-direction: column;  
+}
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    display: block;
+    transition: 0.3s;
+  }
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  .sidenav > #icons{
+    width:99%;
+    height:70px;
+    border:0px solid black;
+    display: flex;
+  }
+  #icons>div{
+   width:30%;
+   height:100%;
+   border: 0px solid red;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+  }
+  #iconContainer{
+    border:0px solid gray;
+    width: 60px;
+    height:60px;
+    border-radius:55px;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+  }
+  #iconContainer:hover{
+    background-color: rgb(201, 196, 196);
+  }
+  #icons>div> #iconContainer>#img1{
+    width:60%;
+}
+  #icons>div>#img2{
+    width:100%;
+}
+.sidenav>hr{
+    width:95%;
+    text-align:left;
+    margin-left:0"
+}
+.sidenav > select{
+  border:0px solid red;
+  margin-left: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 25px;
+  font-family: 'Times New Roman', Times, serif;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.sidenav > select >option{
+    border: none;
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    display: block;
+    transition: 0.3s;
+}
+
+/* Top Section Search Area */
+
+#Top-section{
+  width:100%;
+  height:450px;
+  border:1px solid red;
+  background-image: url("https://assets.interntheory.com/creative/Homepage-Banner.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+
+}
+
+#heading{
+  text-align: center;
+  margin-top: 100px;
+  font-size: 25px;
+  color: white;
+}
+#heading>span{
+  text-align: center;
+  margin-top: 100px;
+  font-size: 25px;
+  color: white;
+  background-color: red;
+  padding: 5px 8px;
+  font-weight: bold;
+}
+#desc{
+  text-align: center;
+  margin-top: -15px;
+  color: white;
+}
+#search-Area{
+  border:0px solid black;
+  width:90%;
+  height: 100px;
+  row-gap: 10px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  background-color: #d7dadc;
+  opacity: 0.8;
+}
+#search-Area>input{
+  width:200px;
+  height: 50px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+  border: none;
+  border-bottom: 1px solid gray;
+  background-color: #d7dadc;
+  
+}
+#search-Area>div{
+  border:0px solid black;
+  width:300px;
+  height:50px;
+  margin-top: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+  margin-left: 10px;
+  display: flex;
+  justify-content: center;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+#search-Area>div>input{
+  width:200px;
+  border: none;
+  border-bottom: 2px solid gray;
+  background-color: #d7dadc;
+}
+#search-Area>div>button{
+  width:80px;
+  height: 35px;
+  margin-top: 10px;
+  border-radius: 5px;
+  background-color: red;
+  border: none;
+  margin-left: 5px;
+
+}
+ #search-Area>h4{
+  margin-top: 40px;
+} 
+
+/* Mid Section1 */
+
+#mid-section{
+  border:0px solid slateblue;
+  width:100%;
+  height:450px;
+  display: flex;
+}
+#mid-section>div{
+  border:0px solid greenyellow;
+  width: 40%;
+  height:100%;
+  margin: auto;
+}
+#mid-right{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: repeat(5,82px);
+  gap:10px;
+}
+#mid-right>div{
+  border:0px solid red;
+}
+#mid-left > div{
+  border:0px solid blueviolet;
+  width:90%;
+  height:70%;
+  margin:auto;
+  margin-top:50px;
+ 
+}
+#mid-left > div>h2{
+  padding-top: 40px;
+}
+#mid-left > div>h2>span{
+  color: red;
+}
+#mid-left > div>p{
+  font-family: 'Times New Roman', Times, serif;
+  color: rgb(102, 95, 95);
+}
+
+/* Mid Section 2 */
+
+#work{
+  border:0px solid black;
+  width:100%;
+  height:600px;
+  background-color: #f7fcfe;
+}
+#work >h1{
+  text-align: center;
+  margin-top: 90px;
+  padding-top: 70px;
+}
+#work >h1>span{
+  color: red;
+}
+#work-grid{
+  border:0px solid green;
+  width:90%;
+  height:70%;
+  margin: auto;
+  /* background-color: #f7fcfe; */
+}
+#work-grid{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: repeat(2,203px);
+  gap:10px;
+}
+#work-grid>div{
+  border:0px solid red;
+}
+#work-grid>div>img{
+  width:100%;
+  border-radius: 5px;
+}
+
+
