@@ -8,6 +8,14 @@
     <link rel="stylesheet" href="indexStyles.css">
     <script src="https://kit.fontawesome.com/ba9f74f15d.js" crossorigin="anonymous"></script>
     <script src="index.js"></script>
+    <script src="slide.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+     <!-- <style>
+        .mySlides{
+            display:none;
+        }
+    </style> -->
 </head>
 <body>
     <div id="navbar">
@@ -19,34 +27,40 @@
                     <div><img id="img2" src ="https://assets.interntheory.com/creative/logo.png"/></div>
                 </div>
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                <a href="index.html"><i class="fa-sharp fa-solid fa-house"></i> <span>Home</span></a>
+                <a href="index.html"><span>Home</span></a>
                 <a href="#">Internship</a>
-                <a href="#"><i class="fa-solid fa-briefcase-blank"></i><span>Jobs</span></a>
+                <a href="#"><span>Jobs</span></a>
                 <a href="#">Post Internship</a>
                 <select>
-                    <option><i class="fa-sharp fa-solid fa-book-bookmark"></i><span>Courses</span></option>
-                    <option><a href="#">Online Course</a></option>
+                    <option><span>Courses</span></option>
+                    <option><a href="courses.html">Online Course</a></option>
                     <option><a href="#">ClassRoom Training</a></option>
                 </select>
-                <a href="#"><i class="fa-solid fa-phone"></i><span> Contact Us</span></a>
+                <!-- <button class="dropdown-btn">Courses <i class="fa fa-caret-down"></i></button>
+                  <div class="dropdown-container">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                  </div> -->
+                <a href="#"></i><span> Contact Us</span></a>
                 <hr>
                 <select>
-                    <option><i class="fa-regular fa-bars-sort"></i> <span>Resister</span></option>
+                    <option> <span>Resister</span></option>
                     <option><a href="#">Company</a></option>
                     <option><a href="#">Student</a></option>
                 </select>
                 <select>
-                    <option><i class="fa-sharp fa-solid fa-door-open"></i><span>Login</span></option>
+                    <option><span>Login</span></option>
                     <option><a href="#">Company</a></option>
                     <option><a href="#">Student</a></option>
                 </select>
             </div>
           <div id="navleft">
             <div id="menuicon">
-                <div ><img id="openIcon" src ="https://cdn-icons-png.flaticon.com/128/2791/2791742.png"/></div>
+                <div ><img id="openIcon" onclick="openNav()" src ="https://cdn-icons-png.flaticon.com/128/2791/2791742.png"/></div>
+                <!-- <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span> -->
                 </div>
             <div>
-                <img src="https://assets.interntheory.com/creative/logo.png" />
+                <a href="index.html"><img id="company_icon" src="https://assets.interntheory.com/creative/logo.png" /></a>
             </div>
           </div>
           <div id="navright">
@@ -65,6 +79,7 @@
     </div>
 
     <!-- Search Area Top Section -->
+    <div class="main">
     <div id="Top-section">
       <p id="heading">Let's Get You <span>Ready</span></p>
       <p id="desc">The One Stop to Upgrade Your Resume. Expand Your Skillset. Do An Internship. Get Placed</p>
@@ -120,19 +135,164 @@
     <div id="work">
         <h1>LET’S GET SOME <span>WORK EXPERIENCE</span></h1>
         <div id="work-grid">
-          <div><img src="https://assets.interntheory.com/creative/home-internships/Marketing-Icon.jpg"/></div>
-          <div><img src="https://assets.interntheory.com/creative/home-internships/BD.jpg"/></div>
-          <div><img src="https://assets.interntheory.com/creative/home-internships/Content-Writing.jpg"/></div>
-          <div><img src="https://assets.interntheory.com/creative/home-internships/Graphic.jpg" /></div>
-          <div><img src="https://assets.interntheory.com/creative/home-internships/Finance.jpg" /></div>
-          <div><img src="https://assets.interntheory.com/creative/home-internships/HR.jpg" /></div>
-          <div><img src="https://assets.interntheory.com/creative/home-internships/Eng.jpg" /></div>
-          <div><img src="https://assets.interntheory.com/creative/home-internships/All-Internships.jpg" /></div>
+          <div><a href="#"><img src="https://assets.interntheory.com/creative/home-internships/Marketing-Icon.jpg"/></a></div>
+          <div><a href="#"><img src="https://assets.interntheory.com/creative/home-internships/BD.jpg"/></a></div>
+          <div><a href="#"><img src="https://assets.interntheory.com/creative/home-internships/Content-Writing.jpg"/></a></div>
+          <div><a href="#"><img src="https://assets.interntheory.com/creative/home-internships/Graphic.jpg" /></a></div>
+          <div><a href="#"><img src="https://assets.interntheory.com/creative/home-internships/Finance.jpg" /></a></div>
+          <div><a href="#"><img src="https://assets.interntheory.com/creative/home-internships/HR.jpg" /></a></div>
+          <div><a href="#"><img src="https://assets.interntheory.com/creative/home-internships/Eng.jpg" /></a></div>
+          <div><a href="#"><img src="https://assets.interntheory.com/creative/home-internships/All-Internships.jpg" /></a></div>
         </div>
     </div>
 
-    <!-- Upskilling  Mid Section3-->
+    <!-- Up Skill Mid Section3 -->
+    <div id="upskill">
+        <h1>HOW ABOUT <span>UPSKILLING ?</span></h1>
+        <div id="upskil_course">
+            <div><a href="#"><img src="https://assets.interntheory.com/creative/home-courses/Homepage-stock.jpg" /></a></div>
+            <div><a href="#"><img src ="https://assets.interntheory.com/creative/home-courses/Homepage-digital.jpg"/></a></div>
+            <div><a href="#"><img src ="https://assets.interntheory.com/creative/home-courses/Homepage-web.jpg" /></a></div>
+
+        </div>
+    </div>
+
+    <!-- Up  Mid Section4-->
+    <div id="up">
+        <div id="up-left">
+            <img src="https://assets.interntheory.com/creative/chart.png" />
+        </div>
+        <div id="up-right">
+            <h1>WE ARE CONSTANTLY <span>GROWING</span></h1>
+            <hr>
+            <p>We are on a mission to help every student in India. Upgrading your CV and getting you a meaningful job
+                 remains our sole motive and we are not stopping anytime soon.</p>
+        </div>
+    </div>
+
+    <!-- Review Mid Section4 -->
     
+    <div id="review">
+       <div id="slide">
+        <!-- <button class="slide-display-left" onclick="plusDivs(-1)">&#10094;</button> -->
+         <button class="slide-display-left" onclick="plusDivs(-1)"><span class="material-symbols-outlined">arrow_back_ios_new</span></button>
+        <div class="mySlides">
+        
+           <!-- <div id="slideinfo-left">
+            <img src="https://assets.interntheory.com/img/testimonial-image/in2.jpg"/>
+            <h2>Siddhart Viyyapu</h2>
+            <p>Intern At Gooseberry</p>
+           </div>
+           <div class="vl"></div>
+           <div id="slideinfo-right">
+            <p>"I created my profile because I had before Intern Theory, not come across a consultancy that would execute the 
+                responsibility of getting a result for your application irrespective of being failure or success the way they did.
+                They've set the bars really high! Kudos team!"</p>
+           </div> -->
+        </div>
+         <div class="mySlides">
+            <!-- <div id="slideinfo-left">
+                <img src="https://assets.interntheory.com/img/testimonial-image/in2.jpg"/>
+                <h2>Siddhart Viyyapu</h2>
+                <p>Intern At Gooseberry</p>
+               </div>
+               <div class="vl"></div>
+               <div id="slideinfo-right">
+                <p>"I created my profile because I had before Intern Theory, not come across a consultancy that would execute the 
+                    responsibility of getting a result for your application irrespective of being failure or success the way they did.
+                    They've set the bars really high! Kudos team!"</p>
+               </div> -->
+        </div>
+        <div class="mySlides">
+            <!-- <div id="slideinfo-left">
+                <img src="https://assets.interntheory.com/img/testimonial-image/in2.jpg"/>
+                <h2>Siddhart Viyyapu</h2>
+                <p>Intern At Gooseberry</p>
+               </div>
+               <div class="vl"></div>
+               <div id="slideinfo-right">
+                <p>"I created my profile because I had before Intern Theory, not come across a consultancy that would execute the 
+                    responsibility of getting a result for your application irrespective of being failure or success the way they did.
+                    They've set the bars really high! Kudos team!"</p>
+               </div> -->
+        </div>
+        <div class="mySlides">
+            <!-- <div id="slideinfo-left">
+                <img src="https://assets.interntheory.com/img/testimonial-image/in2.jpg"/>
+                <h2>Siddhart Viyyapu</h2>
+                <p>Intern At Gooseberry</p>
+               </div>
+               <div class="vl"></div>
+               <div id="slideinfo-right">
+                <p>"I created my profile because I had before Intern Theory, not come across a consultancy that would execute the 
+                    responsibility of getting a result for your application irrespective of being failure or success the way they did.
+                    They've set the bars really high! Kudos team!"</p>
+               </div> -->
+        </div>
+        <!-- <button class="slide-display-right" onclick="plusDivs(-1)">&#10094;</button> -->
+         <button class="slide-display-right" onclick="plusDivs(1)"><span class="material-symbols-outlined">arrow_forward_ios</span></button> 
+       </div> 
+    </div>
+
+    <!-- Footer -->
+
+    <div id ="Foot">
+      <div id="foot_content">
+        <div id="foot_icon">
+            <div><a href="https://www.facebook.com/interntheory"><img src="https://cdn-icons-png.flaticon.com/128/1384/1384053.png" /></a></div>
+            <div><a href="https://www.linkedin.com/company/interntheory/"><img src="https://cdn-icons-png.flaticon.com/128/3256/3256016.png" /></a></div>
+            <div><a href="https://twitter.com/InternTheory"><img src="https://cdn-icons-png.flaticon.com/128/3256/3256013.png" /></a></div>
+            <div><a href="https://www.instagram.com/interntheory/"><img src="https://cdn-icons-png.flaticon.com/128/87/87390.png" /></a></div>
+        </div>
+        <div id="foot_details">
+            <div>
+                <ul>
+                    <li><p>By Place</p></li>
+                    <hr>
+                    <a href="#"><li>Internship in Mumbai</li></a>
+                    <a href="#"><li>Internship in Delhi</li></a>
+                    <a href="#"><li>Internship in Banglore</li></a>
+                    <a href="#"><li>Internship in Pune</li></a>
+                    <a href="#"><li>Internship in Hyderabad</li></a>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li><p>By Profile</p></li>
+                    <hr>
+                    <a href="#"><li>Marketing Internship</li></a>
+                    <a href="#"><li>Bussiness Development Internship</li></a>
+                    <a href="#"><li>Content Writing Internship</li></a>
+                    <a href="#"><li>Graphic Designing Internship</li></a>
+                    <a href="#"><li>HR Internship</li></a>
+                    <a href="#"><li>Engineering Internship</li></a>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li><p>By Type</p></li>
+                    <hr>
+                    <a href="#"><li>Full Time Internship</li></a>
+                    <a href="#"><li>Part Time Internship</li></a>
+                    <a href="#"><li>Work From Home Internship</li></a>
+                    
+                </ul> 
+            </div>
+        </div>
+      </div>
+       <div id="company_info">
+          <a href="#"><p>REFUNDS & CANCELLATION POLICY</p></a>
+          <a href="#"><p>COURSES</p></a>
+          <a href="#"><p>TERMS & CONDITIONS</p></a>
+          <a href="#"><P>PRIVACY POLICY</P></a>
+          <a href="#"><P>CONTACT US</P></a>
+          <a href="#"><P>ABOUT US</P></a>
+          <a href="#"><P>SITE MAP</P></a>
+       </div>
+       <hr>
+       <p>© 2015 - 2022 INTERNTHEORY. ALL RIGHTS RESERVED.</p>
+    </div>
+   </div> 
     
 </body>
 </html>
