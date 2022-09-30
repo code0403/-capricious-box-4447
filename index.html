@@ -10,12 +10,15 @@
     <script src="index.js"></script>
     <script src="slide.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-     <!-- <style>
+     <style>
         .mySlides{
             display:none;
         }
-    </style> -->
+
+        #menuicon{
+            display:none;
+        }
+    </style>
 </head>
 <body>
     <div id="navbar">
@@ -24,39 +27,34 @@
             <div id="mysidenav" class="sidenav">
                 <div id="icons">
                     <div><div id="iconContainer"><img id="img1" src="https://cdn-icons-png.flaticon.com/128/2791/2791742.png" /></div></div>
-                    <div><img id="img2" src ="https://assets.interntheory.com/creative/logo.png"/></div>
+                    <div><a href="index.html"><img id="img2" src ="https://assets.interntheory.com/creative/logo.png"/></a></div>
                 </div>
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                <a href="index.html"><span>Home</span></a>
+                <a href="index.html">Home</a>
                 <a href="#">Internship</a>
-                <a href="#"><span>Jobs</span></a>
+                <a href="job_page.html">Jobs</a>
                 <a href="#">Post Internship</a>
                 <select id="Course" onchange="myfunc()">
                     <option>Courses</option>
                     <option>Online Course</option>
                     <option>ClassRoom Training</option>
                 </select>
-                <!-- <button class="dropdown-btn">Courses <i class="fa fa-caret-down"></i></button>
-                  <div class="dropdown-container">
-                    <a href="#">Link 1</a>
-                    <a href="#">Link 2</a>
-                  </div> -->
                 <a href="#"></i><span> Contact Us</span></a>
                 <hr>
                 <select>
-                    <option> <span>Resister</span></option>
+                    <option>Resister</option>
                     <option><a href="#">Company</a></option>
                     <option><a href="#">Student</a></option>
                 </select>
-                <select>
-                    <option><span>Login</span></option>
-                    <option><a href="#">Company</a></option>
-                    <option><a href="#">Student</a></option>
+                <select id="Login" onchange="loginFunc()">
+                    <option>Login</option>
+                    <option>Company</option>
+                    <option>Student</option>
                 </select>
             </div>
           <div id="navleft">
-            <div id="menuicon">
-                <div ><img id="openIcon" onclick="openNav()" src ="https://cdn-icons-png.flaticon.com/128/2791/2791742.png"/></div>
+            <div id="menuicon" onclick="openNav()">
+                <div ><img id="openIcon" src ="https://cdn-icons-png.flaticon.com/128/2791/2791742.png"/></div>
                 <!-- <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span> -->
                 </div>
             <div>
@@ -174,11 +172,10 @@
     
     <div id="review">
        <div id="slide">
-        <!-- <button class="slide-display-left" onclick="plusDivs(-1)">&#10094;</button> -->
+       
          <button class="slide-display-left" onclick="plusDivs(-1)"><span class="material-symbols-outlined">arrow_back_ios_new</span></button>
         <div class="mySlides">
-        
-           <!-- <div id="slideinfo-left">
+          <div id="slideinfo-left">
             <img src="https://assets.interntheory.com/img/testimonial-image/in2.jpg"/>
             <h2>Siddhart Viyyapu</h2>
             <p>Intern At Gooseberry</p>
@@ -188,10 +185,10 @@
             <p>"I created my profile because I had before Intern Theory, not come across a consultancy that would execute the 
                 responsibility of getting a result for your application irrespective of being failure or success the way they did.
                 They've set the bars really high! Kudos team!"</p>
-           </div> -->
+           </div>
         </div>
-         <div class="mySlides">
-            <!-- <div id="slideinfo-left">
+         <!-- <div class="mySlides">
+            <div id="slideinfo-left">
                 <img src="https://assets.interntheory.com/img/testimonial-image/in2.jpg"/>
                 <h2>Siddhart Viyyapu</h2>
                 <p>Intern At Gooseberry</p>
@@ -201,10 +198,10 @@
                 <p>"I created my profile because I had before Intern Theory, not come across a consultancy that would execute the 
                     responsibility of getting a result for your application irrespective of being failure or success the way they did.
                     They've set the bars really high! Kudos team!"</p>
-               </div> -->
+               </div>
         </div>
         <div class="mySlides">
-            <!-- <div id="slideinfo-left">
+            <div id="slideinfo-left">
                 <img src="https://assets.interntheory.com/img/testimonial-image/in2.jpg"/>
                 <h2>Siddhart Viyyapu</h2>
                 <p>Intern At Gooseberry</p>
@@ -214,10 +211,10 @@
                 <p>"I created my profile because I had before Intern Theory, not come across a consultancy that would execute the 
                     responsibility of getting a result for your application irrespective of being failure or success the way they did.
                     They've set the bars really high! Kudos team!"</p>
-               </div> -->
+               </div>
         </div>
         <div class="mySlides">
-            <!-- <div id="slideinfo-left">
+            <div id="slideinfo-left">
                 <img src="https://assets.interntheory.com/img/testimonial-image/in2.jpg"/>
                 <h2>Siddhart Viyyapu</h2>
                 <p>Intern At Gooseberry</p>
@@ -227,9 +224,9 @@
                 <p>"I created my profile because I had before Intern Theory, not come across a consultancy that would execute the 
                     responsibility of getting a result for your application irrespective of being failure or success the way they did.
                     They've set the bars really high! Kudos team!"</p>
-               </div> -->
-        </div>
-        <!-- <button class="slide-display-right" onclick="plusDivs(-1)">&#10094;</button> -->
+               </div>
+        </div> -->
+
          <button class="slide-display-right" onclick="plusDivs(1)"><span class="material-symbols-outlined">arrow_forward_ios</span></button> 
        </div> 
     </div>
@@ -296,14 +293,3 @@
     
 </body>
 </html>
-<!-- <script>
-
-     document.querySelector("#openIcon").addEventListener("click",openNav);
-    function openNav(){
-      document.getElementById("mysidenav").style.width ="100";
-    }
-    
-    function closeNav(){
-        document.getElementById("mysidenav").style.width = "0";
-    }
-</script> -->

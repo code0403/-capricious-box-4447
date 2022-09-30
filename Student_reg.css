@@ -1,0 +1,192 @@
+.main{
+    margin-top: 90px; 
+    z-index: 2;
+    overflow: hidden;
+    border:1px solid rgb(201, 47, 47);
+    width:100%;
+    height: 1200px;
+    background-image: url("	https://assets.interntheory.com/creative/Web-Banner.jpg");
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; 
+    padding:0px;
+}
+#reg-container{
+    border:1px solid white;  /*black*/
+    width:45%;
+    height:auto;
+    margin:auto;
+    margin-top: 50px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#reg-container>div{
+    border: 1px solid white;  /* brown*/
+    width:550px;
+    height:60px;
+    margin-top: 20px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+#reg-container>div>p{
+    text-align: left;
+}
+#reg-container>div>#head{
+    font-size: 24px;
+    font-family:Helvetica, Arial,  sans-serif;
+}
+#reg-container>div>#head+p{
+  font-size: 14px;
+  color: #999999;
+}
+p>span>a{
+    text-decoration: none;
+}
+#reg-container>#info{
+    border:1px dotted brown;
+    width:550px;
+    height:70px;
+    border-radius: 8px;
+    background-color: #f8f8f8;
+    
+}
+#reg-container>#info>p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    line-height: 22px;
+    color: #3c4858;
+    letter-spacing: 0.14px;
+}
+#reg-container>#fb{
+    border:1px solid blue;
+    width:550px;
+    height:45px;
+    border-radius: 5px;
+    background-color:  #4267b2;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 5px 0px, rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 3px 1px -2px;
+    display: flex;
+}
+#reg-container>#fb>div{
+    width:30px;
+    height:30px;
+    border:1px solid white;
+    margin-left: 20px;
+    margin-top:7px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+}
+#reg-container>#fb>div>img{
+    width:70%;
+    margin: auto;
+}
+#reg-container>#fb>p{
+    margin: auto;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: Helvetica,Arial,sans-serif;
+    color: white;
+}
+#reg-container>#Goog{
+    border:1px solid blue;
+    width:550px;
+    height:45px;
+    border-radius: 5px;
+    background-color:#087cdd;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 5px 0px, rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 3px 1px -2px;
+    display: flex;
+}
+#reg-container>#Goog>div{
+    width:30px;
+    height:30px;
+    border:1px solid white;
+    margin-left: 20px;
+    margin-top:7px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+}
+#reg-container>#Goog>div>img{
+    width:70%;
+    margin: auto;  
+}
+#reg-container>#Goog>p{
+    margin: auto;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: Helvetica,Arial,sans-serif;
+    color: white; 
+}
+#reg-container>h5{
+    text-align: center;
+    margin-top: 5px;
+    color:#999999;
+    font-size: 16px;
+}
+form >div{
+    width:550px;
+    height:auto;
+    border: 0px solid red;
+    margin: auto;
+    margin-bottom: 30px;
+   
+}
+#name{
+    width:500px;
+    height:80px;
+    border: 0px solid cyan;
+    margin: auto;
+    margin-top: 10px;
+    display:flex;
+    justify-content: space-between;
+}
+#name >div{
+    width:48%;
+    height:100%;
+    border: 0px solid yellowgreen;
+    border: none;
+    
+}
+#name >div>input{
+    height:40px;
+    width:98%;
+    margin-top: 15px;
+    border: none;
+    border-bottom: 2px solid gray;
+    font-size: 15px;
+   
+}
+.dets{
+    width:500px;
+    height:80px;
+    border: 0px solid cyan;
+    margin: auto;
+    margin-top: 0px; 
+}
+.dets>input{
+    height:40px;
+    width:99%;
+    margin-top: 15px;
+    border: none;
+    border-bottom: 2px solid gray;
+    font-size: 15px;
+}
+#submit{
+    border:1px solid red;
+    width:480px;
+    height: 40px;
+    margin: auto;
+    margin-top: 30px;
+    margin-left: 32px;
+    font-size: 20px;
+    font-family: Helvetica,Arial,  sans-serif;
+    color:rgb(185, 40, 40);
+    background-color: white;
+}
+
+
+

@@ -1,0 +1,239 @@
+body{
+    margin:0;
+}
+
+#search-box{
+    border:0px solid black;
+    width:100%;
+    height:100px;
+    /* position:fixed;
+    top:0;
+    z-index: 2;
+    overflow: hidden; */
+    margin-top: 90px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+#search-area{
+    border:0px solid black;
+    width:75%;
+    height: 100px;
+    row-gap: 10px;
+    margin: auto;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    /* background-color: #d7dadc; */
+    opacity: 0.8;
+  }
+  #search-area>input{
+    width:300px;
+    height: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+    border: none;
+    border-bottom: 1px solid gray;
+}
+
+ #search-area>input:hover{
+    border-bottom: 2px solid black;
+ }
+  #search-area>div{
+    border:0px solid black;
+    width:300px;
+    height:50px;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-left: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    padding:5px;
+    border-radius: 5px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    background-color: #d7dadc;
+  }
+  #search-area>div>input{
+    width:200px;
+    border: none;
+    border-bottom: 2px solid gray;
+    background-color: #d7dadc;
+  }
+  #search-area>div>input:hover{
+    border-bottom: 2px solid black;
+  }
+  #search-area>div>button{
+    width:80px;
+    height: 35px;
+    margin-top: 10px;
+    border-radius: 5px;
+    background-color: rgb(79, 79, 228);
+    border: none;
+    margin-left: 5px;
+    color: white;
+    font-size: 15px;
+  
+  }
+   #search-area>h4{
+    margin-top: 40px;
+    font-size: 15px;
+    margin-right: 10px;
+  }
+  
+.main{
+    margin-top: 0px; 
+    z-index: -1;
+    overflow: hidden;
+    border:0px solid red;
+    width:100%;
+    height: 900px;
+    padding-bottom: 90px;
+    background-color: #f8f8f8;
+}
+.main >div{
+    display: flex;
+    margin: auto;
+}
+#pic{
+   border:0px solid brown;
+   width:20%;
+   height:270px; 
+   margin-left: 80px;
+   margin-top: 30px;
+
+}
+#pic > a >img{
+    width:100%;
+}
+#details{
+    border:0px solid blue;
+    width:65%;
+    height:950px;
+    margin: auto;
+    margin-left: 40px;
+    margin:30px;
+}      
+
+h4{
+    text-transform: capitalize;
+    color: rgba(0, 0, 0, 0.87);
+    font-size: 24px;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    line-height: 1.33;
+    margin-left: 42px;
+    
+}
+
+#dot-border{
+    width:90%;
+    height:90%;
+    border:0px dotted brown;
+    margin:auto;
+    margin-top: -4px;
+    padding-bottom: 70px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#dot-border > div{
+    width:100%;
+    height:200px;
+    border:0px solid black;
+    border-bottom: 1px dashed gray;
+    display: flex;
+}
+.picture{
+    width:20%;
+    height: 100%;
+    border:0px solid green;
+    display: flex;
+    align-items: center;
+}
+.det{
+    width:50%;
+    height:100%;
+    border:0px solid green;
+    font-family: Helvetica, Arial, sans-serif;
+    text-align:start;
+   
+}
+.share{
+    width:30%;
+    height: 100%;
+    border:0px solid green;
+}
+.picture>div{
+    border:0px solid blue;
+    width:100px;
+    height: 100px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+.picture>div>img{
+    width:100%;
+    background-size: cover;
+}
+.det >h3,h5,h6{
+    text-align:start;
+    margin-left: 10px;
+    text-transform: capitalize;
+    line-height: 0.5px;
+    row-gap: 0px;
+    font-family:  Helvetica,Arial,sans-serif;
+    color: gray;
+   
+}
+.det>h5{
+    font-size: 15px;
+    text-transform: capitalize;
+    
+}
+.det>h6{
+ font-size: 13px;
+}
+.share>p{
+  text-align: right;
+  margin-right: 60px;
+  margin-top: 40px;
+}
+.s-img{
+    width:50px;
+    height: 50px;
+    border:0px solid blue;
+    margin-left: 120px;
+    margin-top: 20px;
+    border-radius:60px ;
+}
+.s-img:hover{
+    background-color: rgb(194, 24, 24);
+}
+.s-img>img{
+    width:100%;
+}
+.up_box{
+    border:1px solid white;
+    width:150px;
+    height: 35px;
+    margin-left: 60px;
+    margin-top: 20px;
+   border-radius: 5px;
+   text-align: center;
+}
+.up_box > p{
+    font-size: 15px;
+    font-weight: bold;
+    color: rgb(79, 79, 219);
+}
+.up_box:hover{
+    background-color:lightblue;
+}
+
+#end{
+    text-align: center;
+    font-size: 17px;
+    color: gray;
+    font-family: Helvetica, Arial, sans-serif;
+}
