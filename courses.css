@@ -2,6 +2,11 @@
     background-color: pink;
 } */
 
+.main{
+margin-top: 90px; 
+  z-index: 2;
+  overflow: hidden;
+}
 
 #head-background{
     width:100%;
