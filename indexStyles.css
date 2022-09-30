@@ -13,6 +13,7 @@ body{
     width:100%;
     height:90px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    font-family: Helvetica,Arial,sans-serif;
 }
 #navbar > div{
     border:0px solid black;
@@ -60,6 +61,7 @@ body{
 }
 #carticon >div:hover{
     background-color: rgb(201, 196, 196);
+    cursor: pointer;
 }
 #carticon >div >img{
     width:50%;
@@ -79,6 +81,7 @@ body{
 }
 #navright >div>a>button:hover{
     background-color: brown;
+    cursor: pointer;
 }
  #menuicon > div{
     border:0px solid gray;
@@ -98,6 +101,7 @@ body{
 }
 #menuicon > div:hover{
     background-color: rgb(201, 196, 196);
+    cursor: pointer;
 }
 .sidenav{
     height: 100%;
@@ -118,47 +122,15 @@ body{
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
+    font-family: Helvetica,Arial,sans-serif;
     color: black;
     display: block;
     transition: 0.3s;
   }
   .sidenav a:hover {
     color: #f1f1f1;
-  }
-
-  /* dropdown */
-  /* .sidenav a, .dropdown-btn {
-    padding: 6px 8px 6px 16px;
-    text-decoration: none;
-    font-size: 20px;
-    color: #cc1616;
-    display: block;
-    border: none;
-    background: none;
-    width:100%;
-    text-align: left;
     cursor: pointer;
-    outline: none;
   }
-
-  .sidenav a:hover, .dropdown-btn:hover {
-     color: #4b1313; 
-    color: #f1f1f1;
-  }
-
-.dropdown-container {
-  display: none;
-  background-color: #262626;
-  padding-left: 8px;
-}
-
-
-.fa-caret-down {
-  float: right;
-  padding-right: 8px;
-} */
-  /* dropdown */
-
 
   .sidenav .closebtn {
     position: absolute;
@@ -193,12 +165,14 @@ body{
   }
   #iconContainer:hover{
     background-color: rgb(201, 196, 196);
+    cursor:pointer;
   }
   #icons>div> #iconContainer>#img1{
     width:60%;
 }
-  #icons>div>#img2{
-    width:100%;
+  #icons>div>a>#img2{
+    width:350%;
+    height: 100%;
 }
 .sidenav>hr{
     width:95%;
@@ -213,7 +187,7 @@ body{
   margin-top: 10px;
   margin-bottom: 10px;
   font-size: 25px;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: Helvetica,Arial,sans-serif;
   text-decoration: none;
   transition: 0.3s;
 }
@@ -238,12 +212,12 @@ body{
 #Top-section{
   width:100%;
   height:450px;
-  border:1px solid red;
+  border:0px solid red;
   background-image: url("https://assets.interntheory.com/creative/Homepage-Banner.png");
   background-repeat: no-repeat;
   background-attachment: fixed;  
   background-size: cover;
-  /* padding-top: 40px; */
+  padding-top: 40px;
   /* margin-top: 90px; */
 }
 
@@ -292,6 +266,9 @@ body{
   background-color: #d7dadc;
   
 }
+#search-Area>input:hover{
+  border-bottom: 2px solid black;
+}
 #search-Area>div{
   border:0px solid black;
   width:300px;
@@ -309,6 +286,9 @@ body{
   border: none;
   border-bottom: 2px solid gray;
   background-color: #d7dadc;
+}
+#search-Area>div>input:hover{
+  border-bottom: 2px solid black;
 }
 #search-Area>div>button{
   width:80px;
@@ -497,10 +477,10 @@ body{
 /* Review Mid Section5 */
 
 #review{
-  border: 1px solid brown;
+  border: 0px solid brown;
   width:100%;
   height:350px;
-  background-color: #f7fcfe;
+  background-color: rgb(238,238,238);
   
 }
 #slide{
@@ -509,16 +489,17 @@ body{
   height: 250px;
   margin: auto;
   margin-top: 50px;
-  /* padding-top: 50px; */
   display: flex;
 }
 #slide>div{
-  border: 1px solid black;
+  border: 0px solid black;
   width:90%;
   height:80%;
   margin-top: 35px;
   margin-left: 40px;
   display: flex;
+  border-radius: 0px 20px 0px 20px;
+  background-color: white;
 }
 #slide>.slide-display-left,.slide-display-right{
   height:80px;
@@ -551,11 +532,8 @@ body{
 .mySlides>.vl{
   border-left: 2px solid gray;
   height: 95%;
-  /* position: absolute; */
-  /* left: 50%;
-  margin-left: -3px; */
   margin-top: 6px;
-}
+} 
 #slideinfo-right>p{
   text-align:justify;
   margin-top: 50px;
@@ -579,6 +557,9 @@ body{
 #slideinfo-left>h2, p{
   text-align: center;
   line-height: 2px;
+}
+#slideinfo-left>p{
+  color: rgb(81, 81, 241);
 }
 
 

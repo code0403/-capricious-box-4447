@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Intern Theory</title>
+    <title>Jobs</title>
+    <link rel="stylesheet" href="job_page.css">
     <link rel="stylesheet" href="indexStyles.css">
-    <script src="https://kit.fontawesome.com/ba9f74f15d.js" crossorigin="anonymous"></script>
     <script src="index.js"></script>
-    <link rel="stylesheet" href="course_classroom.css">
+    <script src="https://kit.fontawesome.com/ba9f74f15d.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 </head>
 <body>
@@ -23,13 +23,14 @@
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                 <a href="index.html"><span>Home</span></a>
                 <a href="#">Internship</a>
-                <a href="job_page.html"><span>Jobs</span></a>
+                <a href="#"><span>Jobs</span></a>
                 <a href="#">Post Internship</a>
-                <select id="Course" onchange = "myfunc()">
+                <select id="Course" onchange="myfunc()">
                     <option>Courses</option>
                     <option>Online Course</option>
                     <option>ClassRoom Training</option>
                 </select>
+                
                 <a href="#"></i><span> Contact Us</span></a>
                 <hr>
                 <select>
@@ -66,84 +67,122 @@
           </div>
         </div>
     </div>
-     
+   
+
+    <div id="search-box">
+        <div id="search-area">
+            <input type="text" placeholder="Cities... "> 
+            <input type="text" placeholder="Preferences...">
+            <h4>OR</h4>
+            <div>
+                <input type="text" placeholder="Search...">
+                <button>Search</button>
+            </div>
+    </div>
+
 
     <div class="main">
-     <div id="head-background">
-      <img src="https://assets.interntheory.com/creative/courses/listpage/Course-banner1.png" />
-    </div>
-    
-    <div id="heading">
-         <h4>Certified Online Courses</h4>
-        <p>Intern Theory launches certified classroom training for select courses in Mumbai. If you are from
-             another city and wish to join our courses, please whatsapp us on 9892041244</p> 
-    </div>
-
-    <div id="course-cart">
-
-        <div class="cart-container">
-            <div>
-                <img src="https://assets.interntheory.com/creative/courses/thumbnails/digital-marketing-course.png"/> 
+        <div>
+            <div id="pic">
+                <a href="courses.html"><img src="https://assets.interntheory.com/creative/Internship_left_course_add_02.png"/></a>
             </div>
-            <h3>Digital Marketing Course</h3>
-            <p>Learn the art of digital marketing. Sign up for this online ...</p>
-            <hr>
-            <p class="pre">11999</p>
-            <p class="curr">5999</p>
-            <h4 id="emi">EMI Starting at 343/Month <span class="material-symbols-outlined">
-                help</span></h4>
-            <h5>KNOW MORE</h5>
-            <button>Add to Cart</button>    
-        </div>
-        <div class="cart-container">
-            <div>
-                <img src="https://assets.interntheory.com/courses/banner/1573120159.png"/> 
+      <div id="details">
+        <!-- <h4>Fresher Job Jobs</h4> -->
+        <div id="dot-border">
+          <div>
+            <div class="picture">
+                <div><img src ="https://assets.interntheory.com/creative/logo.png"/></div>
             </div>
-            <h3>Offline Stock Market Course</h3>
-            <p>Learn how to trade and invest in stock markets. Enroll for t ...</p>
-            <hr>
-            <p class="pre">19999</p>
-            <p class="curr">9999</p>
-            <h4 id="emi">EMI Starting at 572/Month <span class="material-symbols-outlined">
-                help</span></h4>
-            <h5>KNOW MORE</h5>
-            <button>Add to Cart</button> 
+            <div class="det">
+                <h3>Develop Your Skillset</h3>
+                <h5>Online Skill Development Programs</h5>
+                <h6>Taught by Industry Experts Internship</h6>
+                <h6>Certified Courses</h6>
+                <h6>Guaranteed Internship Opportunities</h6>
+                <h5><span>Learn Industry-Demanded Skills</span></h5>
+            </div>
+            <div class="share">
+                <p>4-6 Weeks</p>
+                <div class="s-img"><img src="https://as1.ftcdn.net/v2/jpg/01/61/82/30/1000_F_161823001_WsPXqhTedPqT1eyfhxZqACqWomByL55i.jpg"/></div>
+                <div class="up_box">
+                  <p>UPGRADE</p>
+                </div>
+            </div>
+          </div>
+        
+          <div>
+            <div class="picture">
+                <div><img src ="https://assets.interntheory.com/uploads/company/logos/bf3174743fe71c1e3028caabc90044f486d5bc7b.jpg"/></div>
+            </div>
+            <div class="det">
+                <h3>Legal Associate</h3>
+                <h5>Home capital</h5>
+                <h6>Legal</h6>
+                <h6>Certified Courses</h6>
+                <h6>Mumbai</h6>
+                <h5>Salary <span>25000 - 30000 per/Month</span></h5>
+            </div>
+            <div class="share">
+                <p>4-6 Weeks</p>
+                <div class="s-img"><img src="https://as1.ftcdn.net/v2/jpg/01/61/82/30/1000_F_161823001_WsPXqhTedPqT1eyfhxZqACqWomByL55i.jpg"/></div>
+                <div class="up_box">
+                  <p>UPGRADE</p>
+                </div>
+            </div>
+          </div>
+          <div>
+            <div class="picture">
+                <div><img src ="https://assets.interntheory.com/uploads/company/logos/bf3174743fe71c1e3028caabc90044f486d5bc7b.jpg"/></div>
+            </div>
+            <div class="det">
+                <h3>Flutter Developer</h3>
+                <h5>HomeCapital</h5>
+                <h6>Software Development</h6>
+                <h6>Certified Courses</h6>
+                <h6>Mumbai</h6>
+                <h5>Salary <span>50000 - 70000 per/Month</span></h5>
+            </div>
+            <div class="share">
+                <p>4-6 Weeks</p>
+                <div class="s-img"><img src="https://as1.ftcdn.net/v2/jpg/01/61/82/30/1000_F_161823001_WsPXqhTedPqT1eyfhxZqACqWomByL55i.jpg"/></div>
+                <div class="up_box">
+                  <p>UPGRADE</p>
+                </div>
+            </div>
+          </div>
+          <div>
+            <div class="picture">
+                <div><img src ="https://assets.interntheory.com/uploads/company/logos/bf3174743fe71c1e3028caabc90044f486d5bc7b.jpg"/></div>
+            </div>
+            <div class="det">
+                <h3>Angular Developer</h3>
+                <h5>HomeCapital</h5>
+                <h6>Software Development</h6>
+                <h6>Certified Courses</h6>
+                <h6>Mumbai</h6>
+                <h5>Salary <span>25000 - 35000 per/Month</span></h5>
+            </div>
+            <div class="share">
+                <p>4-6 Weeks</p>
+                <div class="s-img"><img src="https://as1.ftcdn.net/v2/jpg/01/61/82/30/1000_F_161823001_WsPXqhTedPqT1eyfhxZqACqWomByL55i.jpg"/></div>
+                <div class="up_box">
+                  <p>UPGRADE</p>
+                </div>
+            </div>
+          </div>
+          <h3 id="end">End Of Search Results</h3>
         </div>
         
-        <div class="cart-container">
-            <div>
-                <img src="https://assets.interntheory.com/creative/courses/thumbnails/tally-gst-course.png"/> 
-            </div>
-            <h3>Tally + GST Course</h3>
-            <p>Sign up for this online tally and gst course and learn how t ...</p>
-            <hr>
-            <p class="pre">7999</p>
-            <p class="curr">3999</p>
-            <h4 id="emi">EMI Starting at 229/Month <span class="material-symbols-outlined">
-                help</span></h4>
-            <h5>KNOW MORE</h5>
-            <button>Add to Cart</button> 
+      </div>
         </div>
-        
-        <div class="cart-container">
-            <div>
-                <img src="https://assets.interntheory.com/creative/courses/thumbnails/advanced-excel-course.png"/> 
-            </div>
-            <h3>Advanced Excel Course</h3>
-            <p>Master MS Excel. Take the online ms excel course and learn t ...</p>
-            <hr>
-            <p class="pre">5999</p>
-            <p class="curr">2999</p>
-            <h4 id="emi">EMI Starting at 172/Month <span class="material-symbols-outlined">
-                help</span></h4>
-            <h5>KNOW MORE</h5>
-            <button>Add to Cart</button> 
-        </div>
-      
+     
     </div>
+
+     <!-- Footer -->
     
 
-    
+      <!-- Footer -->
+
     <div id ="Foot">
         <div id="foot_content">
           <div id="foot_icon">
@@ -200,10 +239,6 @@
          <hr>
          <p>© 2015 - 2022 INTERNTHEORY. ALL RIGHTS RESERVED.</p>
       </div>
-     </div> 
-           
-    </div>
-
-
+     
 </body>
 </html>

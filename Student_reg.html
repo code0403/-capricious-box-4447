@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Registration</title>
     <link rel="stylesheet" href="indexStyles.css">
-    <link rel="stylesheet" href="login_company.css">
     <script src="index.js"></script>
+    <link rel="stylesheet" href="Student_reg.css">
     <script src="https://kit.fontawesome.com/ba9f74f15d.js" crossorigin="anonymous"></script>
-
+    <style>
+       
+        
+    </style>
 </head>
 <body>
     <div id="navbar">
@@ -18,7 +21,7 @@
             <div id="mysidenav" class="sidenav">
                 <div id="icons">
                     <div><div id="iconContainer"><img id="img1" src="https://cdn-icons-png.flaticon.com/128/2791/2791742.png" /></div></div>
-                    <div><img id="img2" src ="https://assets.interntheory.com/creative/logo.png"/></div>
+                    <div><a href="index.html"><img id="img2" src ="https://assets.interntheory.com/creative/logo.png"/></a></div>
                 </div>
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                 <a href="index.html"><span>Home</span></a>
@@ -30,13 +33,13 @@
                     <option>Online Course</option>
                     <option>ClassRoom Training</option>
                 </select>
-               
+              
                 <a href="#"></i><span> Contact Us</span></a>
                 <hr>
                 <select>
                     <option> <span>Resister</span></option>
                     <option><a href="#">Company</a></option>
-                    <option><a href="#">Student</a></option>
+                    <option><a href="Student_reg.html">Student</a></option>
                 </select>
                 <select id="Login" onchange="loginFunc()">
                     <option>Login</option>
@@ -68,39 +71,73 @@
         </div>
     </div>
 
+    <div class="main">
+        <div id="reg-container">
+            <div>
+                <p id ="head">Register Candidate</p>
+                <p>Already have an account? <span><a href="login_student.html">Sign in</a></span></p>
+            </div>
+            <div id="info">
+                <p>If you are a company looking to hire interns, please register as a company by clicking <span><a href="#">here</a></span>.</p>
+            </div>
+            <div id="fb">
+             <div>
+                <img src="https://www.interntheory.com/assets/iconsLogos/facebook-circular-logo.svg" />    
+            </div>
+            <p>REGISTER WITH FACEBOOK</p>
+            </div>
 
-<div class="main">
-   <div id="login-conatiner">
-    <div id="heading">
-        <div id="stud"><a href="login_student.html">Student</a></div>
-        <div id="comp"><a href="login_company.html">Company</a></div>
-     </div>
-     <h2>Login</h2>
-     <div id="message">
-        <p>If you are a student looking for internships, please login as a student by clicking <a href="login_student.html">here .</a></p>
-     </div>
-     <div id="linkedin">
-        <div><img src= "https://bit.ly/3fud40Q"</i></div>
-        <h3>SIGNIN WITH LINKEDIN</h3>
-     </div>
-     <h4>OR</h4>
-     <div id="details">
-        <input type ="text" placeholder="Email/Number">
-        <input type ="password" placeholder="Password"/> 
-     </div>
-     <div id="help">
-        <div>
-            <input type = "checkbox" />
-            <label> <span>Remember Me</span></label>
+            <div id="Goog">
+                <div>
+                    <img src="https://www.interntheory.com/assets/iconsLogos/googlelogo.svg" />    
+                </div>
+                <p>REGISTER WITH GOOGLE</p>
+            </div>
+
+            <h5>OR</h5>
+            <form>
+                <div id="form-container">
+                    <div id="name">
+                       <div>
+                        <!-- <label>First Name</label> -->
+                        <input type="text" placeholder="First Name*" required/>
+                       </div>
+                       <div>
+                        <!-- <label>Last Name</label> -->
+                        <input type="text" placeholder="Last Name*" required />
+                       </div>
+                    </div>
+                    <div class="dets">
+                        <input type="text" placeholder="Email*"required />
+                    </div>
+                    <div class="dets">
+                        <input type="text" placeholder="Password*"required />
+                    </div>
+                    <div class="dets">
+                        <input type="text" placeholder="Mobile Number*"required />
+                    </div>
+                    <div class="dets">
+                        <input type="text" placeholder="Select City">
+                    </div>
+                    <div class="dets">
+                        <input type="text" placeholder="Preferences select two or more*"required />
+                    </div>
+                    <div class="dets">
+                        <input type="text" placeholder="How Did You Find Us?*"required />
+                    </div>
+                    <div class="dets">
+                        <input type="text" placeholder="What are you looking for?*" required />
+                    </div>
+                    <input id ="submit" type="submit">
+                </div>
+            </form>
+
         </div>
-        <div><a href="#"><p>Forgot Password ?</p></a></div>
-     </div>
-     <p>Don't have an account? <a href="#">Create Your Account</a></p>
-     <button>Login</button>
-   </div> 
-</div>
+
+    </div>
 
 
+    
 <!-- Footer -->
 
 <div id ="Foot">
@@ -160,6 +197,14 @@
      <p>© 2015 - 2022 INTERNTHEORY. ALL RIGHTS RESERVED.</p>
   </div>
 
- 
 </body>
-</html>
+</html>    
+
+<script>
+
+    let details =document.querySelector("form").addEventListener("submit",RegFunc);
+
+    function RegFunc(){
+        alert("Registration Complete")
+    }
+</script>
