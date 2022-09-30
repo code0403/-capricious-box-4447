@@ -1,8 +1,8 @@
 .main{
-    margin-top: 90px;
+    margin-top: 90px; 
     z-index: 2;
     overflow: hidden;
-    border:0px solid white;
+    border: 0px solid white; 
     background-image: url("	https://assets.interntheory.com/creative/Web-Banner.jpg");
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
@@ -11,36 +11,34 @@
 }
 #login-conatiner{
     width:35%;
-    height: 800px;
+    height: 650px;
     border:0px solid black;
     margin: auto;
     margin-top: 100px;
     margin-bottom: 50px; 
    border-radius: 10px;
-   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
    background-color: white;
+   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 #heading{
     width:85%;
     height:60px;
     border:0px solid green;
-     margin-top: 20px; 
+    padding-top: 20px;
     margin-left: 35px;
     display: flex;
-    
 }
 #heading >div{
     border: 0px solid red;
     width:50%;
     height: 100%;
     font-size: 20px;
-    margin: auto;
     margin-top: -50px;
+    margin: auto;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    /* box-sizing: border-box; */
 }
 #heading >div>a{
     text-decoration: none;
@@ -50,11 +48,11 @@
     justify-content: center;
     align-items: center;
 }
-#stud >a{
+#comp >a{
     background-color: white;
     height: 100%;
     border-bottom: 2px solid blueviolet;
-    width:100%
+    width:100%;
 }
 #stud >a:hover,#comp>a:hover{
     border-bottom: 2px solid blueviolet;
@@ -64,8 +62,9 @@
 }
 h2{
     margin-left: 35px;
-    margin-top: 10px;
+    margin-top: 5px;
 }
+
 #message{
     width:85%;
     height:60px;
@@ -175,3 +174,4 @@ button{
 button:hover{
     background-color: rgb(230, 214, 214);
 }
+

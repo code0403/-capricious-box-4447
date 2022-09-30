@@ -5,163 +5,79 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <link rel="stylesheet" href="indexStyles.css">
+    <link rel="stylesheet" href="login_company.css">
+    <script src="index.js"></script>
     <script src="https://kit.fontawesome.com/ba9f74f15d.js" crossorigin="anonymous"></script>
-    <style>
-        #login-conatiner{
-            width:35%;
-            height: 650px;
-            border:0px solid black;
-            margin: auto;
-            margin-top: 50px;
-           border-radius: 10px;
-           box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-        }
-        #heading{
-            width:85%;
-            height:60px;
-            border:0px solid green;
-            padding-top: 20px;
-            margin-left: 35px;
-            display: flex;
-        }
-        #heading >div{
-            border: 0px solid red;
-            width:50%;
-            height: 100%;
-            font-size: 20px;
-            margin-top: 20px;
-            margin: auto;
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-        }
-        #heading >div>a{
-            text-decoration: none;
-            color: black;
-        }
-        h2{
-            margin-left: 35px;
-            margin-top: 5px;
-        }
-        #message{
-            width:85%;
-            height:60px;
-            border:1px dotted green;
-            border-radius: 5px;
-            margin-left: 35px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: rgb(240, 233, 233);
-        }
-        #message>p{
-            margin-top: 0px;
-            line-height: 25px;
-            margin-left: 5px;
-            font-family: sans-serif;
-        }
-        #message>p>a{
-            text-decoration: none;
-        }
-        #linkedin{
-            width:85%;
-            height:45px;
-            border:0px solid green;
-            border-radius: 5px;
-            margin-left: 35px;
-            margin-top: 20px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            column-gap: 50px;
-            background-color: #087cdd;
-            color: white;
-            font-family: 'Times New Roman', Times, serif;
-            margin-bottom: 3px;
-         
 
-        }
-        #linkedin >div{
-            width: 35px;
-            height: 70%;
-            border:0px solid blue;
-            /* margin-right: 80px; */
-            margin-left: -65px;
-            background-color: white;
-            border-radius: 5px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        #linkedin >h3{
-            text-align: center;
-        }
-        #linkedin >div>img{
-            width:70%;
-        }
-        h4{
-          text-align: center;
-          color:rgb(177, 159, 159);
-        }
-        #details{
-            width:85%;
-            height:150px;
-            border:0px solid green;
-            margin-left: 35px;
-            margin-top: 20px;
-            display: flex;
-            flex-direction: column;
-            row-gap: 20px;
-        }
-        #details >input{
-            height: 50px;
-            border: none;
-            border-bottom: 2px solid gray;
-            font-size: 15px;
-        }
-        #help{
-            width:85%;
-            height:40px;
-            border:0px solid green;
-            margin-left: 35px;
-            /* margin-top: 5px; */
-            display: flex;
-            justify-content: space-between;
-        }
-        #help > div{
-            width:40%;
-            height:40px;
-            border:0px solid rgb(51, 105, 51);
-            display: flex;
-            justify-content: center; 
-            align-items: center;
-            font-size: 15px;
-        }
-        #help + p{
-            text-align: center;
-            color: gray;
-        }
-        button{
-            border: 1px solid red;
-            margin: auto;
-            width:85%;
-            height:40px;
-            margin-left: 35px;
-            background-color: white;
-        }
-        button:hover{
-            background-color: rgb(230, 214, 214);
-        }
-        
-        
-    </style>
 </head>
 <body>
+    <div id="navbar">
+        <div>
+          <div id="navcontainer">
+            <div id="mysidenav" class="sidenav">
+                <div id="icons">
+                    <div><div id="iconContainer"><img id="img1" src="https://cdn-icons-png.flaticon.com/128/2791/2791742.png" /></div></div>
+                    <div><img id="img2" src ="https://assets.interntheory.com/creative/logo.png"/></div>
+                </div>
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="index.html"><span>Home</span></a>
+                <a href="#">Internship</a>
+                <a href="#"><span>Jobs</span></a>
+                <a href="#">Post Internship</a>
+                <select id="Course" onchange="myfunc()">
+                    <option>Courses</option>
+                    <option>Online Course</option>
+                    <option>ClassRoom Training</option>
+                </select>
+                <!-- <button class="dropdown-btn">Courses <i class="fa fa-caret-down"></i></button>
+                  <div class="dropdown-container">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                  </div> -->
+                <a href="#"></i><span> Contact Us</span></a>
+                <hr>
+                <select>
+                    <option> <span>Resister</span></option>
+                    <option><a href="#">Company</a></option>
+                    <option><a href="#">Student</a></option>
+                </select>
+                <select>
+                    <option><span>Login</span></option>
+                    <option><a href="#">Company</a></option>
+                    <option><a href="#">Student</a></option>
+                </select>
+            </div>
+          <div id="navleft">
+            <div id="menuicon">
+                <div ><img id="openIcon" onclick="openNav()" src ="https://cdn-icons-png.flaticon.com/128/2791/2791742.png"/></div>
+                <!-- <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span> -->
+                </div>
+            <div>
+                <a href="index.html"><img id="company_icon" src="https://assets.interntheory.com/creative/logo.png" /></a>
+            </div>
+          </div>
+          <div id="navright">
+            <div id="carticon">
+                <div>
+                    <img src="https://cdn-icons-png.flaticon.com/128/2838/2838838.png" />
+                </div>
+                
+            </div>
+            <div>
+                <a href="login_student.html"><button>Sign In</button></a>
+            </div>
+          </div>
+          </div>
+        </div>
+    </div>
+
+
+<div class="main">
    <div id="login-conatiner">
     <div id="heading">
-        <div><a href="login_student.html">Student</a></div>
-        <div>Company</div>
+        <div id="stud"><a href="login_student.html">Student</a></div>
+        <div id="comp"><a href="login_company.html">Company</a></div>
      </div>
      <h2>Login</h2>
      <div id="message">
@@ -186,5 +102,68 @@
      <p>Don't have an account? <a href="#">Create Your Account</a></p>
      <button>Login</button>
    </div> 
+</div>
+
+
+<!-- Footer -->
+
+<div id ="Foot">
+    <div id="foot_content">
+      <div id="foot_icon">
+          <div><a href="https://www.facebook.com/interntheory"><img src="https://cdn-icons-png.flaticon.com/128/1384/1384053.png" /></a></div>
+          <div><a href="https://www.linkedin.com/company/interntheory/"><img src="https://cdn-icons-png.flaticon.com/128/3256/3256016.png" /></a></div>
+          <div><a href="https://twitter.com/InternTheory"><img src="https://cdn-icons-png.flaticon.com/128/3256/3256013.png" /></a></div>
+          <div><a href="https://www.instagram.com/interntheory/"><img src="https://cdn-icons-png.flaticon.com/128/87/87390.png" /></a></div>
+      </div>
+      <div id="foot_details">
+          <div>
+              <ul>
+                  <li><p>By Place</p></li>
+                  <hr>
+                  <a href="#"><li>Internship in Mumbai</li></a>
+                  <a href="#"><li>Internship in Delhi</li></a>
+                  <a href="#"><li>Internship in Banglore</li></a>
+                  <a href="#"><li>Internship in Pune</li></a>
+                  <a href="#"><li>Internship in Hyderabad</li></a>
+              </ul>
+          </div>
+          <div>
+              <ul>
+                  <li><p>By Profile</p></li>
+                  <hr>
+                  <a href="#"><li>Marketing Internship</li></a>
+                  <a href="#"><li>Bussiness Development Internship</li></a>
+                  <a href="#"><li>Content Writing Internship</li></a>
+                  <a href="#"><li>Graphic Designing Internship</li></a>
+                  <a href="#"><li>HR Internship</li></a>
+                  <a href="#"><li>Engineering Internship</li></a>
+              </ul>
+          </div>
+          <div>
+              <ul>
+                  <li><p>By Type</p></li>
+                  <hr>
+                  <a href="#"><li>Full Time Internship</li></a>
+                  <a href="#"><li>Part Time Internship</li></a>
+                  <a href="#"><li>Work From Home Internship</li></a>
+                  
+              </ul> 
+          </div>
+      </div>
+    </div>
+     <div id="company_info">
+        <a href="#"><p>REFUNDS & CANCELLATION POLICY</p></a>
+        <a href="#"><p>COURSES</p></a>
+        <a href="#"><p>TERMS & CONDITIONS</p></a>
+        <a href="#"><P>PRIVACY POLICY</P></a>
+        <a href="#"><P>CONTACT US</P></a>
+        <a href="#"><P>ABOUT US</P></a>
+        <a href="#"><P>SITE MAP</P></a>
+     </div>
+     <hr>
+     <p>© 2015 - 2022 INTERNTHEORY. ALL RIGHTS RESERVED.</p>
+  </div>
+
+ 
 </body>
 </html>

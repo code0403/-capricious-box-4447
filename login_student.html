@@ -28,10 +28,10 @@
                 <a href="#">Internship</a>
                 <a href="#"><span>Jobs</span></a>
                 <a href="#">Post Internship</a>
-                <select>
-                    <option><span>Courses</span></option>
-                    <option><a href="courses.html">Online Course</a></option>
-                    <option><a href="#">ClassRoom Training</a></option>
+                <select id="Course" onchange="myfunc()">
+                    <option>Courses</option>
+                    <option>Online Course</option>
+                    <option>ClassRoom Training</option>
                 </select>
                 <!-- <button class="dropdown-btn">Courses <i class="fa fa-caret-down"></i></button>
                   <div class="dropdown-container">
@@ -78,11 +78,11 @@
 
 
 
-<div id="form-body">
+<div class="main">
    <div id="login-conatiner">
     <div id="heading">
-        <div><a href="login_student.html">Student</a></div>
-        <div><a href="login_company.html">Company</a></div>
+        <div id="stud"><a href="login_student.html">Student</a></div>
+        <div id="comp"><a href="login_company.html">Company</a></div>
      </div>
      <h2>Login</h2>
      <div id="message">

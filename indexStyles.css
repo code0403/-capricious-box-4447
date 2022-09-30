@@ -74,6 +74,7 @@ body{
   border: none;
   border-radius: 5px;
   font-size: 17px;
+  text-decoration: none;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 #navright >div>a>button:hover{
@@ -208,6 +209,7 @@ body{
 .sidenav > select{
   border:0px solid red;
   margin-left: 30px;
+  margin-right: 20px;
   margin-top: 10px;
   margin-bottom: 10px;
   font-size: 25px;
