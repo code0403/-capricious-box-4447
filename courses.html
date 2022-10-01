@@ -18,7 +18,7 @@
             <div id="mysidenav" class="sidenav">
                 <div id="icons">
                     <div><div id="iconContainer"><img id="img1" src="https://cdn-icons-png.flaticon.com/128/2791/2791742.png" /></div></div>
-                    <div><img id="img2" src ="https://assets.interntheory.com/creative/logo.png"/></div>
+                    <div><a href="index.html"><img id="img2" src ="https://assets.interntheory.com/creative/logo.png"/></a></div>
                 </div>
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                 <a href="index.html"><span>Home</span></a>
@@ -30,12 +30,12 @@
                     <option>Online Course</option>
                     <option>ClassRoom Training</option>
                 </select>
-                <a href="#"></i><span> Contact Us</span></a>
+                <a href="contact.html"></i><span> Contact Us</span></a>
                 <hr>
-                <select>
-                    <option> <span>Resister</span></option>
-                    <option><a href="#">Company</a></option>
-                    <option><a href="#">Student</a></option>
+                <select id ="Reg" onchange="RegFunc()">
+                    <option>Resister</option>
+                    <option>Company</option>
+                    <option>Student</option>
                 </select>
                 <select id="Login" onchange="loginFunc()">
                     <option>Login</option>
@@ -94,7 +94,7 @@
             <h4 id="emi">EMI Starting at 915/Month <span class="material-symbols-outlined">
                 help</span></h4>
             <h5>KNOW MORE</h5>
-            <button>Add to Cart</button>    
+            <button id="cartBtn">Add to Cart</button>    
         </div>
         <div class="cart-container">
             <div>
@@ -108,7 +108,7 @@
             <h4 id="emi">EMI Starting at 343/Month <span class="material-symbols-outlined">
                 help</span></h4>
             <h5>KNOW MORE</h5>
-            <button>Add to Cart</button>    
+            <button id="cartBtn">Add to Cart</button>    
         </div>
         <div class="cart-container">
             <div>
@@ -122,7 +122,7 @@
             <h4 id="emi">EMI Starting at 343/Month <span class="material-symbols-outlined">
                 help</span></h4>
             <h5>KNOW MORE</h5>
-            <button>Add to Cart</button> 
+            <button id="cartBtn">Add to Cart</button> 
         </div>
         <div class="cart-container">
             <div>
@@ -136,7 +136,7 @@
             <h4 id="emi">EMI Starting at 229/Month <span class="material-symbols-outlined">
                 help</span></h4>
             <h5>KNOW MORE</h5>
-            <button>Add to Cart</button> 
+            <button id="cartBtn">Add to Cart</button> 
         </div>
         <div class="cart-container">
             <div>
@@ -150,7 +150,7 @@
             <h4 id="emi">EMI Starting at 229/Month <span class="material-symbols-outlined">
                 help</span></h4>
             <h5>KNOW MORE</h5>
-            <button>Add to Cart</button> 
+            <button id="cartBtn">Add to Cart</button> 
         </div>
         <div class="cart-container">
             <div>
@@ -164,7 +164,7 @@
             <h4 id="emi">EMI Starting at 229/Month <span class="material-symbols-outlined">
                 help</span></h4>
             <h5>KNOW MORE</h5>
-            <button>Add to Cart</button> 
+            <button id="cartBtn">Add to Cart</button> 
         </div>
         <div class="cart-container">
             <div>
@@ -178,7 +178,7 @@
             <h4 id="emi">EMI Starting at 172/Month <span class="material-symbols-outlined">
                 help</span></h4>
             <h5>KNOW MORE</h5>
-            <button>Add to Cart</button> 
+            <button id="cartBtn">Add to Cart</button> 
         </div>
         <div class="cart-container">
             <div>
@@ -192,7 +192,7 @@
             <h4 id="emi">EMI Starting at 172/Month <span class="material-symbols-outlined">
                 help</span></h4>
             <h5>KNOW MORE</h5>
-            <button>Add to Cart</button> 
+            <button id="cartBtn">Add to Cart</button> 
         </div> 
     </div>
     

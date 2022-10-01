@@ -175,6 +175,18 @@ form >div{
     border-bottom: 2px solid gray;
     font-size: 15px;
 }
+.dets>select{
+    height:40px;
+    width:99%;
+    margin-top: 15px;
+    border: none;
+    border-bottom: 2px solid gray;
+    font-size: 15px;  
+}
+.dets>select>option{
+  color:gray;
+}
+
 #submit{
     border:1px solid red;
     width:480px;

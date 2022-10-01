@@ -64,7 +64,7 @@ body{
   #search-area>div>input:hover{
     border-bottom: 2px solid black;
   }
-  #search-area>div>button{
+  #search-area>div>#Button{
     width:80px;
     height: 35px;
     margin-top: 10px;

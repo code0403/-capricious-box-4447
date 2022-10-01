@@ -109,14 +109,14 @@ h4{
     color: rgb(255, 179, 38);
     margin-top: 0px;
 }
-h4+h5,button{
+h4+h5,#cartBtn{
     display: inline;
     margin-left: 30px;
 }
 h5{
     color: rgb(74, 74, 233);
 }
-button{
+#cartBtn{
     height:40px;
     margin-bottom: 20px;
     background-color: #DF1E2E;
