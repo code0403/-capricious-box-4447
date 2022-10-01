@@ -163,7 +163,7 @@ h4{
     text-align: center;
     color: gray;
 }
-button{
+#Logbtn{
     border: 1px solid red;
     margin: auto;
     width:85%;
@@ -171,7 +171,7 @@ button{
     margin-left: 35px;
     background-color: white;
 }
-button:hover{
+#Logbtn:hover{
     background-color: rgb(230, 214, 214);
 }
 

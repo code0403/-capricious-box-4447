@@ -34,12 +34,12 @@
                     <option>ClassRoom Training</option>
                 </select>
               
-                <a href="#"></i><span> Contact Us</span></a>
+                <a href="contact.html"></i><span> Contact Us</span></a>
                 <hr>
-                <select>
-                    <option> <span>Resister</span></option>
-                    <option><a href="#">Company</a></option>
-                    <option><a href="Student_reg.html">Student</a></option>
+                <select id ="Reg" onchange="RegFunc ()">
+                    <option>Resister</option>
+                    <option>Company</option>
+                    <option>Student</option>
                 </select>
                 <select id="Login" onchange="loginFunc()">
                     <option>Login</option>
@@ -64,7 +64,7 @@
                 
             </div>
             <div>
-                <a href="login_student.html"><button>Sign In</button></a>
+                <a href="login_student.html"><button id="logBtn">Sign In</button></a>
             </div>
           </div>
           </div>
@@ -94,8 +94,8 @@
      </div>
      <h4>OR</h4>
      <div id="details">
-        <input type ="text" placeholder="Email/Number">
-        <input type ="password" placeholder="Password"/> 
+        <input id="email" type ="text" placeholder="Email/Number">
+        <input id="password" type ="password" placeholder="Password"/> 
      </div>
      <div id="help">
         <div>
@@ -105,7 +105,7 @@
         <div><a href="#"><p>Forgot Password ?</p></a></div>
      </div>
      <p>Don't have an account? <a href="Student_reg.html">Create Your Account</a></p>
-     <button>Login</button>
+     <button id ="submit">Login</button>
    </div> 
 </div>
 
@@ -171,3 +171,32 @@
   </div>
 </body>
 </html>
+
+<script>
+
+    let logDetails = JSON.parse(localStorage.getItem("RegDetails"))
+     console.log(logDetails);
+   // console.log(logDetails.Email);
+
+    let sub = document.querySelector("#submit");
+    sub.addEventListener("click", logFunc)
+
+    function logFunc(){
+        console.log("hello");
+        
+        let email = document.querySelector("#email").value 
+        let password = document.querySelector("#password").value
+        let logDetails = JSON.parse(localStorage.getItem("RegDetails"))
+        
+         
+         if((email === logDetails.Email) && (password === logDetails.Password)){
+            alert("login Successful");
+            window.location.href = "index.html"
+        }
+         else{
+            alert("Email or Password is Incorrect")
+         }
+    }
+
+
+</script>

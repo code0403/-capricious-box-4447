@@ -34,12 +34,12 @@
                     <option>ClassRoom Training</option>
                 </select>
               
-                <a href="#"></i><span> Contact Us</span></a>
+                <a href="contact.html"></i><span> Contact Us</span></a>
                 <hr>
-                <select>
-                    <option> <span>Resister</span></option>
-                    <option><a href="#">Company</a></option>
-                    <option><a href="Student_reg.html">Student</a></option>
+                <select id ="Reg" onchange="RegFunc ()">
+                    <option>Resister</option>
+                    <option>Company</option>
+                    <option>Student</option>
                 </select>
                 <select id="Login" onchange="loginFunc()">
                     <option>Login</option>
@@ -100,7 +100,7 @@
                     <div id="name">
                        <div>
                         <!-- <label>First Name</label> -->
-                        <input type="text" placeholder="First Name*" required/>
+                        <input id ="fname" type="text" placeholder="First Name*" required/>
                        </div>
                        <div>
                         <!-- <label>Last Name</label> -->
@@ -108,25 +108,63 @@
                        </div>
                     </div>
                     <div class="dets">
-                        <input type="text" placeholder="Email*"required />
+                        <input id="email" type="text" placeholder="Email*"required />
                     </div>
                     <div class="dets">
-                        <input type="text" placeholder="Password*"required />
+                        <input id="password" type="text" placeholder="Password*"required />
                     </div>
                     <div class="dets">
-                        <input type="text" placeholder="Mobile Number*"required />
+                        <input id="mbl" type="text" placeholder="Mobile Number*"required />
                     </div>
                     <div class="dets">
-                        <input type="text" placeholder="Select City">
+                        <!-- <input type="text" placeholder="Select City"> -->
+                        <select>
+                            <option style ="color: gray;" id="placeholder" disabled selected hidden>Select City*</option>
+                            <option>Agra</option>
+                            <option>Ahemdabad</option>
+                            <option>Banglore</option>
+                            <option>Chennai</option>
+                            <option>Chittoor</option>
+                            <option>Delhi</option>
+                            <option>Dehradun</option>
+                            <option>Ghaziabad</option>
+                            <option>Lucknow</option>
+                          </select>
                     </div>
                     <div class="dets">
-                        <input type="text" placeholder="Preferences select two or more*"required />
+                        <!-- <input type="text" placeholder="Preferences select two or more*"required /> -->
+                              <select>
+                                <option style ="color: gray;" id="placeholder" disabled selected hidden>Preferences select one or more*</option>
+                                <option>Admin</option>
+                                <option>Animation</option>
+                                <option>Bussiness Development</option>
+                                <option>Content Writing</option>
+                                <option>Data Science</option>
+                                <option>Event Management</option>
+                                <option>Fianace</option>
+                              </select>
                     </div>
                     <div class="dets">
-                        <input type="text" placeholder="How Did You Find Us?*"required />
+                        <!-- <input type="text" placeholder="How Did You Find Us?*"required /> -->
+                        <select>
+                            <option style ="color: gray;" id="placeholder" disabled selected hidden>How Did You Find Us?*</option>
+                            <option>From A friend</option>
+                            <option>Google Search Results</option>
+                            <option>Ads</option>
+                            <option>Youtube</option>
+                            <option>Intagram Ads</option>
+                            <option>NewsPaper</option>
+                            <option>Others</option>
+                          </select>
                     </div>
                     <div class="dets">
-                        <input type="text" placeholder="What are you looking for?*" required />
+                        <!-- <input type="text" placeholder="What are you looking for?*" required /> -->
+                        <select>
+                            <option style ="color: gray;" id="placeholder" selected hidden>What are you looking for?*</option>
+                            <option>Internship</option>
+                            <option>Full time Jobs</option>
+                            <option>Both</option>
+                          </select>
                     </div>
                     <input id ="submit" type="submit">
                 </div>
@@ -205,6 +243,19 @@
     let details =document.querySelector("form").addEventListener("submit",RegFunc);
 
     function RegFunc(){
-        alert("Registration Complete")
+        event.preventDefault();
+       // newArr = [];
+        let regDetails ={
+            name : document.querySelector("#fname").value,
+            Email: document.querySelector("#email").value,
+            Password:document.querySelector("#password").value,
+        }
+        console.log(regDetails);
+        //newArr.push(regDetails);
+        //localStorage.setItem("RegDetails",JSON.stringify(newArr));
+         localStorage.setItem("RegDetails",JSON.stringify(regDetails));
+
+         alert("Registration Complete")
+         window.location.href = "login_student.html"
     }
 </script>

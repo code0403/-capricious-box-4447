@@ -6,10 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Intern Theory</title>
     <link rel="stylesheet" href="indexStyles.css">
+    <link rel="stylesheet" href="contact.css">
     <script src="https://kit.fontawesome.com/ba9f74f15d.js" crossorigin="anonymous"></script>
     <script src="index.js"></script>
-    <link rel="stylesheet" href="course_classroom.css">
+    <script src="slide.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+     <style>
+        .mySlides{
+            display:none;
+        }
+
+        #menuicon{
+            display:none;
+        }
+    </style>
 </head>
 <body>
     <div id="navbar">
@@ -21,11 +31,11 @@
                     <div><a href="index.html"><img id="img2" src ="https://assets.interntheory.com/creative/logo.png"/></a></div>
                 </div>
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                <a href="index.html"><span>Home</span></a>
+                <a href="index.html">Home</a>
                 <a href="#">Internship</a>
-                <a href="job_page.html"><span>Jobs</span></a>
+                <a href="job_page.html">Jobs</a>
                 <a href="#">Post Internship</a>
-                <select id="Course" onchange = "myfunc()">
+                <select id="Course" onchange="myfunc()">
                     <option>Courses</option>
                     <option>Online Course</option>
                     <option>ClassRoom Training</option>
@@ -44,8 +54,8 @@
                 </select>
             </div>
           <div id="navleft">
-            <div id="menuicon">
-                <div ><img id="openIcon" onclick="openNav()" src ="https://cdn-icons-png.flaticon.com/128/2791/2791742.png"/></div>
+            <div id="menuicon" onclick="openNav()">
+                <div ><img id="openIcon" src ="https://cdn-icons-png.flaticon.com/128/2791/2791742.png"/></div>
                 <!-- <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span> -->
                 </div>
             <div>
@@ -66,84 +76,42 @@
           </div>
         </div>
     </div>
-     
 
     <div class="main">
-     <div id="head-background">
-      <img src="https://assets.interntheory.com/creative/courses/listpage/Course-banner1.png" />
-    </div>
-    
-    <div id="heading">
-         <h4>Certified Online Courses</h4>
-        <p>Intern Theory launches certified classroom training for select courses in Mumbai. If you are from
-             another city and wish to join our courses, please whatsapp us on 9892041244</p> 
+       <div id="container">
+        <div id="contact-dets">
+            <h1>Contact</h1>
+            <p>Have something to say? Give us a holler through any one of the ways below, and we’ll get back within 24 hours. On a side note, like the rest around us, we have fallen victims to Social Media. Feel free to get in touch on Facebook, LinkedIn or Instagram anytime!</p>
+
+            <form action="">
+                <input type ="text" placeholder="Email Address" required />
+                <input type ="text" placeholder="Mobile Number" required  />
+                <input type ="text" placeholder="Subject" required  />
+                <input id="message" type ="text"  placeholder="Message" required />
+                <button id="mapbtn" type="submit">Submit</button>
+            </form>
+        </div>
+        <div id="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d95261.31359015423!2d80.88512461368704!3d26.856949046684594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399bfd0500c5f6db%3A0x838986fe784f8b69!2sNawab%20Wajid%20Ali%20Shah%20Zoological%20Garden!5e0!3m2!1sen!2sin!4v1664601311410!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+       </div>
+        <div id="social">
+            <div id="social-icon">
+                <div><img src="https://cdn-icons-png.flaticon.com/128/174/174848.png"/></div>
+                <div><img src="https://cdn-icons-png.flaticon.com/128/3256/3256013.png" /></div>
+                <div><img src="https://cdn-icons-png.flaticon.com/128/2111/2111463.png" /> </div>
+                <div> <img src="https://cdn-icons-png.flaticon.com/128/3536/3536505.png"/></div>
+                <div><img src="https://cdn-icons-png.flaticon.com/128/2504/2504957.png" /> </div>
+            </div>
+            <h4>OR</h4>
+            <p>Call:  <span>+91 81047 73673</span></p>
+
+        </div>
     </div>
 
-    <div id="course-cart">
 
-        <div class="cart-container">
-            <div>
-                <img src="https://assets.interntheory.com/creative/courses/thumbnails/digital-marketing-course.png"/> 
-            </div>
-            <h3>Digital Marketing Course</h3>
-            <p>Learn the art of digital marketing. Sign up for this online ...</p>
-            <hr>
-            <p class="pre">11999</p>
-            <p class="curr">5999</p>
-            <h4 id="emi">EMI Starting at 343/Month <span class="material-symbols-outlined">
-                help</span></h4>
-            <h5>KNOW MORE</h5>
-            <button id="cartBtn">Add to Cart</button>    
-        </div>
-        <div class="cart-container">
-            <div>
-                <img src="https://assets.interntheory.com/courses/banner/1573120159.png"/> 
-            </div>
-            <h3>Offline Stock Market Course</h3>
-            <p>Learn how to trade and invest in stock markets. Enroll for t ...</p>
-            <hr>
-            <p class="pre">19999</p>
-            <p class="curr">9999</p>
-            <h4 id="emi">EMI Starting at 572/Month <span class="material-symbols-outlined">
-                help</span></h4>
-            <h5>KNOW MORE</h5>
-            <button id="cartBtn">Add to Cart</button> 
-        </div>
-        
-        <div class="cart-container">
-            <div>
-                <img src="https://assets.interntheory.com/creative/courses/thumbnails/tally-gst-course.png"/> 
-            </div>
-            <h3>Tally + GST Course</h3>
-            <p>Sign up for this online tally and gst course and learn how t ...</p>
-            <hr>
-            <p class="pre">7999</p>
-            <p class="curr">3999</p>
-            <h4 id="emi">EMI Starting at 229/Month <span class="material-symbols-outlined">
-                help</span></h4>
-            <h5>KNOW MORE</h5>
-            <button id="cartBtn">Add to Cart</button> 
-        </div>
-        
-        <div class="cart-container">
-            <div>
-                <img src="https://assets.interntheory.com/creative/courses/thumbnails/advanced-excel-course.png"/> 
-            </div>
-            <h3>Advanced Excel Course</h3>
-            <p>Master MS Excel. Take the online ms excel course and learn t ...</p>
-            <hr>
-            <p class="pre">5999</p>
-            <p class="curr">2999</p>
-            <h4 id="emi">EMI Starting at 172/Month <span class="material-symbols-outlined">
-                help</span></h4>
-            <h5>KNOW MORE</h5>
-            <button id="cartBtn">Add to Cart</button> 
-        </div>
-      
-    </div>
-    
+    <!-- Footer -->
 
-    
     <div id ="Foot">
         <div id="foot_content">
           <div id="foot_icon">
@@ -201,9 +169,18 @@
          <p>© 2015 - 2022 INTERNTHEORY. ALL RIGHTS RESERVED.</p>
       </div>
      </div> 
-           
-    </div>
-
 
 </body>
-</html>
+</html> 
+
+<script>
+
+    let feedback = document.querySelector("form").addEventListener("submit",FdBack);
+
+    function FdBack(event){
+        event.preventDefault();
+        alert("Your Response is saved we will Contact you soon.")
+        window.location.href = "index.html"
+    }
+</script>
+

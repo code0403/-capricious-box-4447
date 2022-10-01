@@ -50,6 +50,20 @@ function loginFunc (){
   }
 }
 
+// Register function 
+
+function RegFunc (){
+  let c = document.getElementById("Reg");
+  //console.log("hello")
+  c.style.border="none";
+  if(c.value  === "Company"){
+    window.location.href="#";
+  }
+  if(c.value  === "Student"){
+    window.location.href="Student_reg.html";
+  }
+}
+
 
 // Slider Function
 
@@ -66,7 +80,7 @@ function showDivs(n) {
   if (n > x.length) {slideIndex = 1}
   if (n < 1) {slideIndex = x.length}
   for (i = 0; i < x.length; i++) {
-   // x[i].style.display = "block";  
+  //  x[i].style.display = "block";  
   }
  // x[slideIndex+1].style.display = "block";  
 }

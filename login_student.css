@@ -164,7 +164,7 @@ h4{
     text-align: center;
     color: gray;
 }
-button{
+#submit{
     border: 1px solid red;
     margin: auto;
     width:85%;
@@ -172,6 +172,6 @@ button{
     margin-left: 35px;
     background-color: white;
 }
-button:hover{
+#submit:hover{
     background-color: rgb(230, 214, 214);
 }
