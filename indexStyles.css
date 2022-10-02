@@ -622,7 +622,7 @@ body{
 }
 #foot_details>div>ul>a>li{
   list-style: none;
-  font-size: 16px;
+  font-size: 14px;
   font-family: Helvetica,Arial,sans-serif;
   line-height: 25px;
 }
@@ -652,6 +652,7 @@ body{
 #company_info>a{
   text-decoration: none;
   color: white;
+  
 }
 hr{
   width:90%;
